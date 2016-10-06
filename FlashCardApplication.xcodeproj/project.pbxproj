@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		D2F1F78D1D9DDCF1003885A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F1F78C1D9DDCF1003885A2 /* AppDelegate.swift */; };
-		D2F1F78F1D9DDCF1003885A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F1F78E1D9DDCF1003885A2 /* ViewController.swift */; };
 		D2F1F7921D9DDCF1003885A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F1F7901D9DDCF1003885A2 /* Main.storyboard */; };
 		D2F1F7941D9DDCF1003885A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F1F7931D9DDCF1003885A2 /* Assets.xcassets */; };
 		D2F1F7971D9DDCF1003885A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F1F7951D9DDCF1003885A2 /* LaunchScreen.storyboard */; };
+		D2F1F7A11D9DDD9B003885A2 /* CardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F1F7A01D9DDD9B003885A2 /* CardDeck.swift */; };
+		D2F1F7C51D9EFAC4003885A2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F1F7C41D9EFAC4003885A2 /* Card.swift */; };
+		D2F1F7C71D9EFD4C003885A2 /* CardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F1F7C61D9EFD4C003885A2 /* CardFactory.swift */; };
+		D2F1F7CC1D9F1182003885A2 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F1F7CB1D9F1182003885A2 /* CardTableViewCell.swift */; };
+		D2F1F7CE1DA57B52003885A2 /* CardDeckTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F1F7CD1DA57B52003885A2 /* CardDeckTableViewController.swift */; };
+		D2F1F7F01DA7002F003885A2 /* CardDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F1F7EF1DA7002F003885A2 /* CardDeckViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D2F1F7891D9DDCF1003885A2 /* FlashCardApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCardApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F1F78C1D9DDCF1003885A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2F1F78E1D9DDCF1003885A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D2F1F7911D9DDCF1003885A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2F1F7931D9DDCF1003885A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2F1F7961D9DDCF1003885A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2F1F7981D9DDCF1003885A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F1F7A01D9DDD9B003885A2 /* CardDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDeck.swift; sourceTree = "<group>"; };
+		D2F1F7C41D9EFAC4003885A2 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		D2F1F7C61D9EFD4C003885A2 /* CardFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardFactory.swift; sourceTree = "<group>"; };
+		D2F1F7CB1D9F1182003885A2 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		D2F1F7CD1DA57B52003885A2 /* CardDeckTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDeckTableViewController.swift; sourceTree = "<group>"; };
+		D2F1F7EF1DA7002F003885A2 /* CardDeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDeckViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,43 @@
 		D2F1F78B1D9DDCF1003885A2 /* FlashCardApplication */ = {
 			isa = PBXGroup;
 			children = (
+				D2F1F7CA1D9F116B003885A2 /* Views */,
+				D2F1F7C91D9F112A003885A2 /* Controllers */,
+				D2F1F7C81D9F1115003885A2 /* Models */,
 				D2F1F78C1D9DDCF1003885A2 /* AppDelegate.swift */,
-				D2F1F78E1D9DDCF1003885A2 /* ViewController.swift */,
 				D2F1F7901D9DDCF1003885A2 /* Main.storyboard */,
 				D2F1F7931D9DDCF1003885A2 /* Assets.xcassets */,
 				D2F1F7951D9DDCF1003885A2 /* LaunchScreen.storyboard */,
 				D2F1F7981D9DDCF1003885A2 /* Info.plist */,
 			);
 			path = FlashCardApplication;
+			sourceTree = "<group>";
+		};
+		D2F1F7C81D9F1115003885A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2F1F7C61D9EFD4C003885A2 /* CardFactory.swift */,
+				D2F1F7C41D9EFAC4003885A2 /* Card.swift */,
+				D2F1F7A01D9DDD9B003885A2 /* CardDeck.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D2F1F7C91D9F112A003885A2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2F1F7CD1DA57B52003885A2 /* CardDeckTableViewController.swift */,
+				D2F1F7EF1DA7002F003885A2 /* CardDeckViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D2F1F7CA1D9F116B003885A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2F1F7CB1D9F1182003885A2 /* CardTableViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +175,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2F1F78F1D9DDCF1003885A2 /* ViewController.swift in Sources */,
+				D2F1F7A11D9DDD9B003885A2 /* CardDeck.swift in Sources */,
+				D2F1F7F01DA7002F003885A2 /* CardDeckViewController.swift in Sources */,
+				D2F1F7CC1D9F1182003885A2 /* CardTableViewCell.swift in Sources */,
 				D2F1F78D1D9DDCF1003885A2 /* AppDelegate.swift in Sources */,
+				D2F1F7C71D9EFD4C003885A2 /* CardFactory.swift in Sources */,
+				D2F1F7C51D9EFAC4003885A2 /* Card.swift in Sources */,
+				D2F1F7CE1DA57B52003885A2 /* CardDeckTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +343,7 @@
 				D2F1F79D1D9DDCF1003885A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
