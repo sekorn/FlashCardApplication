@@ -1,74 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dpm-G4-Cp2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DhR-Hk-mzP">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Card Deck Table View Controller-->
-        <scene sceneID="CyI-En-U2x">
+        <!--Card Deck View Controller-->
+        <scene sceneID="DeU-eY-Ofd">
             <objects>
-                <tableViewController id="dpm-G4-Cp2" customClass="CardDeckTableViewController" customModule="FlashCardApplication" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="487" sectionHeaderHeight="28" sectionFooterHeight="28" id="baX-XK-urP" customClass="CardDeckTableVie">
+                <viewController id="DhR-Hk-mzP" customClass="CardDeckViewController" customModule="FlashCardApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KQK-ka-mQ1"/>
+                        <viewControllerLayoutGuide type="bottom" id="dPQ-a0-McO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="swR-Oj-TF7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Card" rowHeight="487" id="Jcg-jj-DTY" customClass="CardTableViewCell" customModule="FlashCardApplication" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="487"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jcg-jj-DTY" id="j4s-3h-YfO">
-                                    <frame key="frameInset" width="375" height="486"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMV-aa-CzT" userLabel="mainView">
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c25-8A-UtW">
-                                                    <frame key="frameInset" minX="61" minY="185" width="172" height="77"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="70"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" cyan="0.0001418739557" magenta="0.0" yellow="0.069316275169999997" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                            <constraints>
-                                                <constraint firstItem="c25-8A-UtW" firstAttribute="centerY" secondItem="nMV-aa-CzT" secondAttribute="centerY" id="EAu-8d-9Bp"/>
-                                                <constraint firstItem="c25-8A-UtW" firstAttribute="centerX" secondItem="nMV-aa-CzT" secondAttribute="centerX" id="M2n-re-VRi"/>
-                                            </constraints>
-                                        </view>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.63725751638412476" green="0.8101765513420105" blue="0.92706573009490967" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="nMV-aa-CzT" secondAttribute="trailing" constant="40" id="QRa-fU-AGF"/>
-                                        <constraint firstAttribute="bottom" secondItem="nMV-aa-CzT" secondAttribute="bottom" constant="20" id="RRW-Z0-41b"/>
-                                        <constraint firstItem="nMV-aa-CzT" firstAttribute="top" secondItem="j4s-3h-YfO" secondAttribute="top" constant="20" id="nyW-0k-5cL"/>
-                                        <constraint firstItem="nMV-aa-CzT" firstAttribute="leading" secondItem="j4s-3h-YfO" secondAttribute="leading" constant="40" id="omg-5V-Ch7"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="mainView" destination="nMV-aa-CzT" id="GCm-bU-73x"/>
-                                    <outlet property="questionLabel" destination="c25-8A-UtW" id="Pw9-I8-BaA"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="dpm-G4-Cp2" id="dXz-sq-xC9"/>
-                            <outlet property="delegate" destination="dpm-G4-Cp2" id="7pY-Lf-EOZ"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uMA-93-Exd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" red="0.63725751638412476" green="0.8101765513420105" blue="0.92706573009490967" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LY5-IB-lWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-417" y="-84"/>
+            <point key="canvasLocation" x="-418" y="599"/>
         </scene>
-        <!--Card Deck View Controller-->
-        <scene sceneID="7Dk-8B-Reu">
+        <!--Card View Controller-->
+        <scene sceneID="m5b-Pr-O0j">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="Dbb-h9-gQU" customClass="CardDeckViewController" customModule="FlashCardApplication" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R4c-M4-3cM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="CardViewController" id="8Sg-Lo-fp0" customClass="CardViewController" customModule="FlashCardApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PZ0-O0-m84"/>
+                        <viewControllerLayoutGuide type="bottom" id="rlG-eG-geh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NT4-mp-rDM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lk2-Y8-ltP">
+                                <frame key="frameInset" minX="115" minY="300" width="145" height="67"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cyan="0.0001418739557" magenta="0.0" yellow="0.069316275169999997" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lk2-Y8-ltP" firstAttribute="centerX" secondItem="NT4-mp-rDM" secondAttribute="centerX" id="XHN-kf-1BZ"/>
+                            <constraint firstItem="lk2-Y8-ltP" firstAttribute="centerY" secondItem="NT4-mp-rDM" secondAttribute="centerY" id="ign-cq-f7a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardLabel" destination="lk2-Y8-ltP" id="DPc-22-o5O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mkc-N1-noD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-418" y="586"/>
+            <point key="canvasLocation" x="274.39999999999998" y="598.65067466266873"/>
         </scene>
     </scenes>
 </document>

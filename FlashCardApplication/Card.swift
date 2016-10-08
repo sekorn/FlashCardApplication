@@ -9,6 +9,7 @@
 import Foundation
 
 class Card {
+    var id: UUID?
     var question: String?
     var answer: String?
 }
